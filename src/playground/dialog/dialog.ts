@@ -6,14 +6,6 @@ export class DialogExample extends LitElement {
     render() {
         return html`
             <playground-ide line-numbers>
-                <script type="sample/html" filename="index.html">
-<!doctype html>
-<body>
-    <x-app></x-app>
-    <script type="module" src="./index.js">&lt;/script>
-</body>
-                </script>
-
                 <script type="sample/ts" filename="index.ts">
 import { html, LitElement } from 'lit';
 import { customElement, query } from 'lit/decorators.js';
@@ -68,6 +60,14 @@ export class Dialog extends LitElement {
         \`;
     }
 }
+                </script>
+
+                <script type="sample/html" filename="index.html">
+<!doctype html>
+<body>
+    <x-app></x-app>
+    <script type="module" src="./index.js">&lt;/script>
+</body>
                 </script>
 
             </playground-ide>
