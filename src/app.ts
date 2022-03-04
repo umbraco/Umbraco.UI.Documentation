@@ -34,6 +34,11 @@ export class App extends LitElement {
       background-color: #008CBA;
       color: white;
     }
+
+    #container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
   `;
 
   render() {
@@ -47,7 +52,7 @@ export class App extends LitElement {
         <h2>UI Library Demo</h2>
       </div>
 
-      <main>
+      <main id="container">
         <slot></slot>
       </main>
     `;
