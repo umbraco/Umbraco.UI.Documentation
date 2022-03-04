@@ -5,6 +5,7 @@ import { customElement, property } from 'lit/decorators.js';
 export class Container extends LitElement {
     static styles = css`
         :host {
+            flex: 1;
             text-align: center;
         }
 

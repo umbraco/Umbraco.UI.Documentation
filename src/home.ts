@@ -1,9 +1,15 @@
-import { html, LitElement } from 'lit';
+import { css, html, LitElement } from 'lit';
 import { customElement } from 'lit/decorators.js';
 
 
 @customElement('x-home')
 export class Home extends LitElement {
+    static styles = css`
+        :host {
+            flex: 1;
+        }
+    `;
+
     render() {
         return html`
         <x-container headline="Umbraco UI Library">

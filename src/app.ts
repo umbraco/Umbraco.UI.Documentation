@@ -7,8 +7,8 @@ import { customElement } from 'lit/decorators.js';
 export class App extends LitElement {
   static styles = css`
     :host {
-      display: flex;
       flex: 1;
+      display: flex;
       flex-direction: column;
     }
 
