@@ -2,8 +2,8 @@ import { html, LitElement } from 'lit';
 import { customElement } from 'lit/decorators.js';
 
 
-@customElement('x-basic')
-export class Basic extends LitElement {
+@customElement('x-playground')
+export class Playground extends LitElement {
     render() {
         return html`
         <h1>Basic examples</h1>
@@ -13,6 +13,6 @@ export class Basic extends LitElement {
 
 declare global {
     interface HTMLElementTagNameMap {
-        'x-basic': Basic
+        'x-playground': Playground
     }
 }

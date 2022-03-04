@@ -34,18 +34,13 @@ export class App extends LitElement {
       background-color: #008CBA;
       color: white;
     }
-
-    #container {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
   `;
 
   render() {
     return html`
       <div class="topnav">
         <a class="active" href="/">Home</a>
-        <a href="/basic">Basic</a>
+        <a href="/playground">Playground</a>
         <a href="/about">About</a>
       </div>
       <div class="header">

@@ -10,10 +10,10 @@ const routes = [
         component: 'x-app',
         children: [
             {
-                path: 'basic',
-                component: 'x-basic',
+                path: 'playground',
+                component: 'x-playground',
                 action: async () => {
-                    await import('./basic/basic');
+                    await import('./playground/playground');
                 },
             },
             {
