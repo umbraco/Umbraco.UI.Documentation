@@ -22,6 +22,13 @@ const routes = [
                         action: async () => {
                             await import('./playground/basics/basics');
                         },
+                    },
+                    {
+                        path: 'build-your-own',
+                        component: 'x-build-your-own',
+                        action: async () => {
+                            await import('./playground/build-your-own/build-your-own');
+                        },
                     }
                 ]
             },

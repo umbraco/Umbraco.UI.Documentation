@@ -45,8 +45,8 @@ export class Playground extends LitElement {
                 </header>
                 <div id="topnav-content"></div>
                 <div id="sidenav">
-                    <a class="active" href="/playground">Playground</a>
                     <a href="/playground/basics">Basics</a>
+                    <a href="/playground/build-your-own">Build Your Own</a>
                 </div>
 
                 <div id="content">
