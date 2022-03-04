@@ -29,7 +29,14 @@ const routes = [
                         action: async () => {
                             await import('./playground/build-your-own/build-your-own');
                         },
-                    }
+                    },
+                    {
+                        path: 'dialog',
+                        component: 'x-dialog-example',
+                        action: async () => {
+                            await import('./playground/dialog/dialog');
+                        },
+                    },
                 ]
             },
             {
