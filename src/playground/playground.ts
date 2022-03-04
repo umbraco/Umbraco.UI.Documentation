@@ -1,8 +1,5 @@
-import 'playground-elements/playground-ide.js';
-
 import { css, html, LitElement } from 'lit';
 import { customElement } from 'lit/decorators.js';
-
 
 @customElement('x-playground')
 export class Playground extends LitElement {
@@ -32,6 +29,11 @@ export class Playground extends LitElement {
             margin: 0.5rem;
         }
     `;
+
+    async connectedCallback() {
+        super.connectedCallback();
+        await import('../../node_modules/playground-elements/playground-ide.js');
+    }
 
     render() {
         return html`
