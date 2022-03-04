@@ -4,13 +4,6 @@ import { customElement } from 'lit/decorators.js';
 @customElement('x-app')
 export class App extends LitElement {
   static styles = css`
-    .header {
-      padding: 20px;
-      font-size: 25px;
-      text-align: center;
-      background: white;
-    }
-
     .topnav {
       background-color: #4f4c4c;
       overflow: hidden;
@@ -42,9 +35,6 @@ export class App extends LitElement {
         <a class="active" href="/">Home</a>
         <a href="/playground">Playground</a>
         <a href="/about">About</a>
-      </div>
-      <div class="header">
-        <h2>UI Library Demo</h2>
       </div>
 
       <main id="container">
