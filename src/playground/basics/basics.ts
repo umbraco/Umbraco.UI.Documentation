@@ -7,15 +7,15 @@ export class Basics extends LitElement {
         return html`
             <playground-ide line-numbers>
                 <script type="sample/html" filename="index.html">
-                    <!doctype html>
-                    <body>
-                        <uui-button look="primary">Click me</uui-button>
-                        <script type="module" src="./index.js">&lt;/script>
-                    </body>
+<!doctype html>
+<body>
+    <uui-button look="primary">Click me</uui-button>
+    <script type="module" src="./index.js">&lt;/script>
+</body>
                 </script>
 
                 <script type="sample/ts" filename="index.ts">
-                    import '@umbraco-ui/uui-button';
+import '@umbraco-ui/uui-button';
                 </script>
             </playground-ide>
         `;
