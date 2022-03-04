@@ -15,6 +15,15 @@ const routes = [
                 action: async () => {
                     await import('./playground/playground');
                 },
+                children: [
+                    {
+                        path: 'basics',
+                        component: 'x-basics',
+                        action: async () => {
+                            await import('./playground/basics/basics');
+                        },
+                    }
+                ]
             },
             {
                 path: 'about',
