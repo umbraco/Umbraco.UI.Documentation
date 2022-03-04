@@ -1,4 +1,5 @@
 import './app';
+import './home';
 
 import { Router } from '@vaadin/router';
 
@@ -9,6 +10,7 @@ const routes = [
         path: '/',
         component: 'x-app',
         children: [
+            { path: '/', component: 'x-home' },
             {
                 path: 'playground',
                 component: 'x-playground',

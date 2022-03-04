@@ -1,3 +1,5 @@
+import './layout/container.element';
+
 import { css, html, LitElement } from 'lit';
 import { customElement } from 'lit/decorators.js';
 
@@ -7,10 +9,10 @@ export class App extends LitElement {
     .topnav {
       background-color: #4f4c4c;
       overflow: hidden;
+      display: flex;
     }
 
     .topnav a {
-      float: left;
       color: #f2f2f2;
       text-align: center;
       padding: 14px 16px;
@@ -33,7 +35,7 @@ export class App extends LitElement {
     return html`
       <div class="topnav">
         <a class="active" href="/">Home</a>
-        <a href="/playground">Playground</a>
+        <a href="/playground/basics">Playground</a>
         <a href="/about">About</a>
       </div>
 
