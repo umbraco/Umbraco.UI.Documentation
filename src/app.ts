@@ -6,6 +6,12 @@ import { customElement } from 'lit/decorators.js';
 @customElement('x-app')
 export class App extends LitElement {
   static styles = css`
+    :host {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+    }
+
     .topnav {
       background-color: #4f4c4c;
       overflow: hidden;
@@ -28,6 +34,17 @@ export class App extends LitElement {
     .topnav a.active {
       background-color: #008CBA;
       color: white;
+    }
+
+    #container {
+      display: flex;
+      flex: 1;
+    }
+
+    @media (max-width: 600px) {
+      .topnav {
+        min-height: 50px;
+      }
     }
   `;
 

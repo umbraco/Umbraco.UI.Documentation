@@ -4,9 +4,17 @@ import { customElement } from 'lit/decorators.js';
 @customElement('x-playground')
 export class Playground extends LitElement {
     static styles = css`
+        :host {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+        }
+
         #container {
             display: grid;
             grid-template-columns: 200px 1fr;
+            grid-template-rows: auto 1fr;
+            height: 100%;
         }
 
         #header {
@@ -27,6 +35,13 @@ export class Playground extends LitElement {
         #sidenav a {
             padding: 0.5rem;
             margin: 0.5rem;
+        }
+
+        @media (max-width: 600px) {
+            #container {
+                grid-template-columns: 1fr;
+                grid-template-rows: unset;
+            }
         }
     `;
 

@@ -1,8 +1,14 @@
-import { html, LitElement } from 'lit';
+import { css, html, LitElement } from 'lit';
 import { customElement } from 'lit/decorators.js';
 
 @customElement('x-basics')
 export class Basics extends LitElement {
+    static styles = css`
+        playground-ide {
+            height: 100%;
+        }
+    `;
+
     render() {
         return html`
             <playground-ide line-numbers>
