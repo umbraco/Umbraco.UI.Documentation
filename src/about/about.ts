@@ -6,7 +6,10 @@ import { customElement } from 'lit/decorators.js';
 export class About extends LitElement {
     render() {
         return html`
-      <slot></slot>
+        <article>
+          <h1>About</h1>
+          <p>This is a demo of the UI Library from Umbraco HQ!</p>
+        </article>
     `;
     }
 }
