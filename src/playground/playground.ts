@@ -47,7 +47,7 @@ export class Playground extends LitElement {
 
     async connectedCallback() {
         super.connectedCallback();
-        await import('playground-elements/playground-ide.js');
+        await import('../../node_modules/playground-elements/playground-ide.js');
     }
 
     render() {
