@@ -19,7 +19,7 @@
   "dependencies": {
     "@vaadin/router": "^1.7.4",
     "lit": "^2.2.3",
-    "playground-elements": "^0.15.4"
+    "playground-elements": "^0.15.5"
   },
   "devDependencies": {
     "rollup-plugin-cleanup": "^3.2.1",
